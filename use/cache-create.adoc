@@ -1,0 +1,114 @@
+---
+sidebar: sidebar 
+permalink: use/cache-create.html 
+keywords: volume caching, bluexp volume caching 
+summary: 卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。缓存卷非常适合读取密集型工作负载、尤其是客户端需要重复访问相同数据的情况。 
+---
+= 创建缓存
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Amazon FSx for ONTAP、Cloud Volumes ONTAP和内部ONTAP之间创建卷缓存、并将源工作环境中的一个或多个源卷作为缓存源。然后、为缓存卷选择Storage Virtual Machine。
+
+缓存卷可以与源卷位于同一集群或不同集群上。您选择缓存的卷必须属于同一个Storage VM、并且这些Storage VM必须使用相同的协议。
+
+
+TIP: 如果卷不符合缓存条件、则它们将呈灰色显示、您无法选择它们。
+
+您可以输入缓存卷的大小(以源卷大小的百分比表示)。
+
+
+NOTE: 缓存卷使用的IP空间取决于源Storage VM使用的IP空间。
+
+缓存卷名称使用后缀 `pass:macros[_cache]` 已添加到原始卷名称。
+
+
+
+== BlueXP卷缓存登录页面中的步骤
+
+. 登录到BlueXP并从左侧导航栏中选择*移动性*>*卷缓存*。
++
+您将进入BlueXP卷缓存信息板页面。首次启动此服务时、您需要添加缓存信息。稍后、将显示信息板、并显示有关缓存的数据。
+
++
+
+NOTE: 如果尚未设置BlueXP Connector，则会显示选项*Add a connector*，而不是*Add a cache*。在这种情况下、您需要先设置连接器。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP快速入门"^]。
+
++
+image:landing-page.png["卷缓存的登录页面"]
+
+. 选择*添加缓存*。
+. 在缓存数据页面中，选择工作环境的源缓存和目标缓存，然后选择*Start caching wizard*。
+. 在配置缓存页面中、选择要缓存的一个或多个卷。
++
+
+NOTE: 最多可以选择50个卷。
+
+. 向下滚动页面可对虚拟机详细信息或卷大小进行其他更改。
+. 输入缓存卷的大小(以源卷大小的百分比表示)。
++
+
+TIP: 根据经验、缓存卷大小应约为源卷大小的15%。
+
+. 选中*缓存访问*框可将NFS导出策略规则和SMB/CCIFS共享配置从源卷复制到目标缓存卷。
++
+然后、源卷中的NFS导出策略规则和SMB/CCIFS共享将复制到缓存卷。如果未在缓存Storage VM上启用SMB/CIF协议、则SMB/CIF共享不会进行复制。
+
+. (可选)输入缓存名称前缀。
+
+
+的后缀 `pass:macros[_cache]` 将附加到名称、格式为： `<user-specified prefix>_<source volume name>_cache`
+
+. 选择*创建缓存*。
++
+新超速缓存将显示在超速缓存列表中。此时将显示缓存卷名称 `pass:macros[_cache]` 作为源卷名称的后缀。
+
+. 要查看操作进度、请从顶部菜单中选择 image:settings-icon.png["设置图标"] >*时间线*。
+
+
+
+
+== BlueXP画布的步骤
+
+. 从BlueXP画布中、选择工作环境。
+. 选择源环境并将其拖动到目标。
+image:drag-n-drop.png["拖放功能可创建缓存"]
+. 选择*卷缓存*服务。
++
+这将创建从源到目标的缓存卷。
+
+. 在右侧窗格中的"超速缓存"服务框中，选择*Add*。
+. 在缓存数据页面中，选择要缓存的工作环境，然后选择*启动缓存向导*。
+image:cache-data.png["缓存数据弹出窗口"]
+. 在配置缓存页面中、选择要缓存的一个或多个卷。
++
+
+NOTE: 最多可以选择50个卷。
+
+. 向下滚动页面可对虚拟机详细信息或卷大小进行其他更改。
+. 输入缓存卷的大小(以源卷大小的百分比表示)。
++
+
+TIP: 根据经验、缓存卷大小应约为源卷大小的15%。
+
++
+image:create-cache.png["窗口添加缓存"]
+
+. 选中*缓存访问*框可将NFS导出策略规则和SMB/CCIFS共享配置从源卷复制到目标缓存卷。
++
+然后、源卷中的NFS导出策略规则和SMB/CCIFS共享将复制到缓存卷。如果未在缓存Storage VM上启用SMB/CIF协议、则SMB/CIF共享不会进行复制。
+
+. (可选)输入缓存名称前缀。
++
+的后缀 `pass:macros[_cache]` 将附加到名称、格式为： `<user-specified prefix>_<source volume name>_cache`
+
+. 选择*创建缓存*。
++
+新超速缓存将显示在超速缓存列表中。此时将显示缓存卷名称 `pass:macros[_cache]` 作为源卷名称的后缀。
+
+. 要查看操作进度、请从顶部菜单中选择 image:settings-icon.png["设置图标"] >*时间线*。
+

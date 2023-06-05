@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: release-notes/cache-limitations.html 
+keywords: volume caching, bluexp 
+summary: 已知限制用于标识此服务版本不支持或无法与之正确交互的平台、设备或功能。 
+---
+= 已知限制
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+已知限制用于标识此服务版本不支持或无法与之正确交互的平台、设备或功能。
+
+
+
+== 复制缓存导出策略规则的限制
+
+在以下情况下、不会将缓存导出策略规则复制到缓存卷：
+
+* 源卷的工作环境为Amazon FSx for NetApp ONTAP或Cloud Volumes ONTAP、而缓存卷为ONTAP 9.10.1或更早版本。
+* 源卷的工作环境为任意版本的ONTAP、而缓存卷为ONTAP 9.10.1或更早版本。
+
+
+临时解决策：您应手动为缓存卷创建规则。
+
+
+
+== 为同名Storage VM创建缓存失败
+
+如果源集群和目标集群使用同名Storage VM、则不会创建缓存。
+
+临时解决策：对源Storage VM和目标Storage VM使用不同的名称。
+
+
+
+== 显示新导出策略或最近编辑的导出策略时出现延迟
+
+创建缓存时、您可能无法在列表中看到最近创建或编辑的导出策略。
+
+临时解决策：请在几分钟后重试。
+
+
+
+== 如果目标仅启用了CIFS协议、则缓存创建将失败
+
+如果源集群或目标集群使用ONTAP 9.10.1或更早版本、而目标集群仅启用了CIFS协议、则缓存创建将失败。
+
+临时解决策：使用运行ONTAP 9.11.1或更高版本或同时配置了CIFS和NFS协议的目标集群。

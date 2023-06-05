@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-login.html 
+keywords: bluexp login, volume caching log in 
+summary: 通过访问BlueXP中的服务开始使用BlueXP卷缓存。 
+---
+= 访问BlueXP卷缓存
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用NetApp BlueXP登录到BlueXP卷缓存服务。
+
+要登录到BlueXP、您可以使用NetApp 支持站点 凭据、也可以使用电子邮件和密码注册NetApp云登录。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有关登录的更多信息"^]。
+
+.步骤
+. 打开Web浏览器并转到 https://console.bluexp.netapp.com/["BlueXP控制台"^]。
++
+此时将显示NetApp BlueXP登录页面。
+
+. 登录到BlueXP。
+. 从BlueXP左侧导航栏中、选择*移动性*>*卷缓存*。
++
+此时将显示BlueXP卷缓存信息板。
+image:landing-page.png["卷缓存登录页面的图像"]
+
++
+
+NOTE: 如果未设置BlueXP Connector，则会出现选项*Add a connector*。请参见 link:../get-started/cache-setup.html["设置BlueXP卷缓存"]。
+
+

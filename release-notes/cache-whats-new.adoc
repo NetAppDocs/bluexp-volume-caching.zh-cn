@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: release-notes/cache-whats-new.html 
+keywords: volume caching faq, bluexp, volume caching frequently asked questions 
+summary: 卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。缓存卷非常适合读取密集型工作负载、尤其是客户端需要重复访问相同数据的情况。 
+---
+= 新增功能
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解BlueXP卷缓存的新增功能。
+
+
+
+== 2023年6月4日
+
+卷缓存是ONTAP 9软件的一项功能、它是一项远程缓存功能、可简化文件分发、通过使资源更靠近用户和计算资源所在位置来减少WAN延迟、并降低WAN带宽成本。卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。缓存卷非常适合读取密集型工作负载、尤其是客户端需要重复访问相同数据的情况。
+
+借助BlueXP卷缓存、您可以缓存云、尤其是Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP以及作为工作环境的内部环境。
+
+link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["详细了解BlueXP卷缓存"]。

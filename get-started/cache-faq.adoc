@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-faq.html 
+keywords: volume caching faq, caching frequently asked questions 
+summary: 如果您只是想快速了解问题解答，此常见问题解答会很有帮助。 
+---
+= 有关BlueXP卷缓存的常见问题
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您只是想快速了解问题解答，此常见问题解答会很有帮助。
+
+*什么是BlueXP卷缓存URL？*
+对于URL、在浏览器中输入： https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] 以访问BlueXP控制台。
+
+*使用BlueXP卷缓存是否需要许可证？*
+不需要NetApp许可证文件(NLF)。
+
+*如何启用BlueXP卷缓存？*
+BlueXP卷缓存不需要任何启用。卷缓存选项会自动显示在BlueXP左侧导航栏中。

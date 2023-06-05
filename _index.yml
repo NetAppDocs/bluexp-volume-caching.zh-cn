@@ -1,0 +1,34 @@
+---
+indexpage:
+  lead: 卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。缓存卷非常适合读取密集型工作负载、尤其是客户端需要重复访问相同数据的情况。
+  tiles:
+  - title: 入门
+    links:
+    - title: 了解BlueXP卷缓存
+      url: "/get-started/cache-intro.html"
+    - title: BlueXP卷缓存中的新增功能
+      url: "/release-notes/cache-whats-new.html"
+    - title: 快速入门
+      url: "/get-started/cache-quick-start.html"
+    - title: 前提条件
+      url: "/get-started/cache-prerequisites.html"
+    - title: 登录到BlueXP卷缓存
+      url: "/get-started/cache-login.html"
+    - title: 常见问题解答
+      url: "/get-started/cache-faq.html"
+  - title: 使用BlueXP卷缓存
+    links:
+    - title: 使用BlueXP卷缓存概述
+      url: "/use/cache-use-overview.html"
+    - title: 创建缓存
+      url: "/use/cache-create.html"
+    - title: 管理缓存
+      url: "/use/cache-manage.html"
+    - title: 监控卷缓存作业
+      url: "/use/monitor-jobs.html"
+  - title: 博客和社区
+    links:
+    - title: NetApp 社区
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: 云网络研讨会
+      url: https://bluexp.netapp.com/events
