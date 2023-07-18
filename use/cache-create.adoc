@@ -59,8 +59,7 @@ TIP: 根据经验、缓存卷大小应约为源卷大小的15%。
 然后、源卷中的NFS导出策略规则和SMB/CCIFS共享将复制到缓存卷。如果未在缓存Storage VM上启用SMB/CIF协议、则SMB/CIF共享不会进行复制。
 
 . (可选)输入缓存名称前缀。
-
-
++
 的后缀 `pass:macros[_cache]` 将附加到名称、格式为： `<user-specified prefix>_<source volume name>_cache`
 
 . 选择*创建缓存*。

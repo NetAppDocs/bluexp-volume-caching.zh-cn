@@ -27,7 +27,7 @@ summary: 通过验证对您的环境、网络访问、登录和Web浏览器的�
 ** 需要在NetApp BlueXP中设置BlueXP连接器。所有源集群和目标集群都必须位于同一个BlueXP Connector上。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP快速入门"^] 和 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解连接器"^]。
 ** 应建立工作环境。
 ** 集群应添加到目标工作环境中、并处于开启或降级状态。
-** 标准BlueXP要求。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["BlueXP要求"]。
+** 标准BlueXP要求。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["BlueXP要求"^]。
 
 
 
