@@ -417,4 +417,5 @@ BlueXP卷缓存不需要任何启用。卷缓存选项会自动显示在BlueXP�
   <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">要为Cloud Volumes ONTAP启用以下关键工作流、需要将NetApp支持站点凭据与您的BlueXP  组织相关联：</block>
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">将NSS凭据与您的BlueXP  组织相关联与与与BlueXP  用户登录相关联的NSS帐户不同。</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">这些NSS凭据与您的特定BlueXP  组织ID相关联。属于BlueXP  组织的用户可以从*Support &gt; NSS Management*访问这些凭据。</block>
+  <block id="ff45d71e69fb5930de79de7c94326d7b" category="doc">卷缓存</block>
 </blocks>

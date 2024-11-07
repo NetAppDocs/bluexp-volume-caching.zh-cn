@@ -1,22 +1,6 @@
----
-sidebar: sidebar 
-permalink: release-notes/cache-whats-new.html 
-keywords: volume caching faq, bluexp, volume caching frequently asked questions 
-summary: 卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。缓存卷非常适合读取密集型工作负载、尤其是客户端需要重复访问相同数据的情况。 
----
-= 新增功能
-:hardbreaks:
+= 卷缓存
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
-
-[role="lead"]
-了解BlueXP卷缓存的新增功能。
-
-
-
-== 2023年6月4日
 
 
 
