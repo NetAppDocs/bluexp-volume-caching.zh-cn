@@ -14,11 +14,9 @@
   <block id="aad34603323b5d4e67ae4a686a15b2e5" category="summary">卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。缓存卷非常适合读取密集型工作负载、尤其是客户端需要重复访问相同数据的情况。</block>
   <block id="5f63db6bf0512dc0612ee852c1faf373" category="doc">BlueXP卷缓存</block>
   <block id="666d3c7d6ea7cfc7ea6e6e6faed1cdd3" category="doc">管理缓存</block>
-  <block id="fc66df463880523a60b999aff387392a" category="paragraph">您可以编辑缓存、更改导出策略、调整缓存大小以及删除缓存。</block>
   <block id="1c0d8013e981cb31dcc7e8733c4fe705" category="paragraph">借助BlueXP卷缓存、您可以实现以下目标：</block>
   <block id="00ac51c16cde551605ec6cf0d3b91416" category="list-text">查看缓存详细信息。</block>
   <block id="06fc18e5e4898299f1a818098e8e94c7" category="list-text">为缓存分配不同的导出策略。</block>
-  <block id="8ba82ac05e167f153ba79532f2f1980a" category="list-text">编辑卷缓存并更改其大小等 编辑功能可以查看和更改其他属性、而更多属性将添加到即将发布的版本的编辑中。</block>
   <block id="b8c0701847f6b5a25da10d75bdbcba97" category="list-text">根据原始卷大小的百分比调整现有缓存的大小。</block>
   <block id="e33b91d9e0fc1cfb3b1e4c432687e47d" category="list-text">删除缓存。</block>
   <block id="eed3d8fba58a64cd23112120a6117455" category="section-title">查看缓存详细信息</block>
@@ -34,23 +32,19 @@
   <block id="f3bd519b868da90fe41b12102022d728" category="list-text">(可选)展开缓存访问选项卡、并修改以下值：</block>
   <block id="4224fae747c5197aa6015f2364e1af12" category="list-text">挂载路径。</block>
   <block id="77cf0358c33e9b52d8fd3920268e696c" category="list-text">与现有策略不同的导出策略。</block>
-  <block id="eccbd53b475458e412e8bcbe57009813" category="list-text">要更改SMB/CCIFS共享详细信息或导出策略规则、请单击相应选项以访问BlueXP System Manager。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">选择 * 保存 * 。</block>
   <block id="e48096df97c7e7e77282b4b97ee9bd9a" category="section-title">分配其他缓存导出策略</block>
   <block id="4635bd9ae5cb389a0305a6b8455fa215" category="paragraph">您可以为缓存分配不同的导出策略。</block>
   <block id="55d1d3e519ab62ebe0a1babb50ae6d72" category="paragraph">源导出策略规则应应用于目标集群。</block>
-  <block id="e7ce5893a6e3bdd09c32da72f9a3c69e" category="admonition">您可以将现有导出策略分配给缓存。您不能更改导出策略规则。如果需要更改导出策略、可以使用NetApp系统管理器。</block>
   <block id="4d418cdd8812dfcb356166d6eaf269f7" category="list-text">选择*更改导出策略*。</block>
   <block id="b580ca1414e0a945196190cbfbc1f75d" category="list-text">选择要分配给缓存的导出策略。</block>
   <block id="31bb5882b51789d8ff23370b949a73ec" category="paragraph">您可以根据源卷的百分比更改缓存卷的大小。</block>
   <block id="782635f18c9a4c6e77f10be3b478b27a" category="list-text">选择*调整大小*。</block>
   <block id="c108e3ea3f3ec7a419ec6372a3325d79" category="list-text">输入初始卷大小的新百分比。</block>
-  <block id="423f18c1cd7d2cab76c65e9cbd30b5d2" category="paragraph">缓存卷大小将调整为新的百分比。</block>
   <block id="8d4c7677b103c84ac6a97f6e946f6380" category="paragraph">如果您不再需要缓存、可以将其删除。此操作将删除卷缓存关系并删除目标卷缓存。</block>
   <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">选择 * 删除 * 。</block>
   <block id="9b4532069e9bc4e1de3c019493dc5ee0" category="list-text">选中复选框。</block>
   <block id="15a05e063d4c5c1c840a1358ea5e2f1a" category="doc">创建缓存</block>
-  <block id="f547278e453645a6383c4ea6320b1bfa" category="paragraph">您可以在Amazon FSx for ONTAP、Cloud Volumes ONTAP和内部ONTAP之间创建卷缓存、并将源工作环境中的一个或多个源卷作为缓存源。然后、为缓存卷选择Storage Virtual Machine。</block>
   <block id="3bae4a7e1bd988883c56b21e3e66b177" category="paragraph">缓存卷可以与源卷位于同一集群或不同集群上。您选择缓存的卷必须属于同一个Storage VM、并且这些Storage VM必须使用相同的协议。</block>
   <block id="40d1cd0fd7b32697fca346c77e81cf33" category="admonition">如果卷不符合缓存条件、则它们将呈灰色显示、您无法选择它们。</block>
   <block id="6594dee820a1fb7f669a0a7cf87596d3" category="paragraph">您可以输入缓存卷的大小(以源卷大小的百分比表示)。</block>
@@ -303,15 +297,8 @@
   <block id="00ebffbe73c6303da2faaad0ab45e519" category="list-text">通过将数据从一个云提供商缓存到另一个云提供商来消除云孤岛</block>
   <block id="3539435a6de515609cc1b8543224f713" category="list-text">降低存储成本</block>
   <block id="a1b38c81c5d745e1d6ec22e5dd6e03bc" category="list-text">跨地理位置协作</block>
-  <block id="a6d7999efa7a1a03a2c0e825c1cf9006" category="list-text">在BlueXP中使用NetApp托管的服务</block>
-  <block id="c9ffd0422125f32e82a20e75ccd4fa42" category="list-text">能够更快地适应不断变化的IT环境</block>
-  <block id="02472e415a539d0a8886679760e38e96" category="list-text">云中托管的按需或基于订阅的卷缓存</block>
   <block id="c544441b0664ccc643b832fb4c1a2198" category="section-title">BlueXP卷缓存功能的用途</block>
   <block id="afbfc91726ebc0228b09fab9d0c7cb8e" category="paragraph">通过BlueXP卷缓存、您可以充分利用多种NetApp技术来实现以下目标：</block>
-  <block id="f291c3dfbe876e9b251168316e411067" category="paragraph">通过BlueXP卷缓存服务、您可以充分利用多种NetApp技术来实现以下目标：</block>
-  <block id="b165c27356ec72ed87e0d89023b56a29" category="list-text">将数据从一个云提供商缓存到另一个云提供商</block>
-  <block id="6d14d0fea89a1c59e9646774b2dce3ef" category="list-text">查看和编辑缓存导出策略</block>
-  <block id="fd420f91fd55c70ed0b581da9becda92" category="list-text">调整现有缓存的大小</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
   <block id="c060b927fb39869f82ce75db89638641" category="paragraph">NetApp不会因使用BlueXP卷缓存服务而向您收费、但您需要检查云提供商是否收取适用的数据传入和传出费用。</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">许可</block>
@@ -418,4 +405,16 @@ BlueXP卷缓存不需要任何启用。卷缓存选项会自动显示在BlueXP�
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">将NSS凭据与您的BlueXP  组织相关联与与与BlueXP  用户登录相关联的NSS帐户不同。</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">这些NSS凭据与您的特定BlueXP  组织ID相关联。属于BlueXP  组织的用户可以从*Support &gt; NSS Management*访问这些凭据。</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="doc">卷缓存</block>
+  <block id="a8bac84ff523e931f832e7db81860512" category="list-text">在BlueXP  中使用NetApp托管的服务</block>
+  <block id="6f8213fefb0b6762f1d9c530a2bae206" category="list-text">更快地适应不断变化的IT环境</block>
+  <block id="3d400de59ced76466bf7abdb0ec00cab" category="list-text">使用云中托管的按需或基于订阅的卷缓存</block>
+  <block id="36d85431ec6c5bc79927239a19ced905" category="list-text">将数据从一个云提供商缓存到另一个云提供商。</block>
+  <block id="c3369e7530496c918d055b6297c1bc2f" category="list-text">查看和编辑缓存导出策略。</block>
+  <block id="00b68c9836b8e47862a5da8d7ba18007" category="list-text">调整现有缓存的大小。</block>
+  <block id="61ab08005a7be6cbf1a790400ab44b84" category="paragraph">您可以在Amazon FSx for ONTAP、Cloud Volumes ONTAP和内部ONTAP之间创建卷缓存、并将源工作环境中的一个或多个源卷作为缓存源。然后、为缓存卷选择Storage Virtual Machine。</block>
+  <block id="75d18c897e2efc995fe22f47079933f7" category="paragraph">您可以编辑卷缓存、更改导出策略、调整缓存大小以及删除缓存。</block>
+  <block id="2ab14afb0bc8eed1346cbbb6dae409ce" category="list-text">编辑卷缓存并更改其大小等属性。</block>
+  <block id="b1173706a82c0b333329c5bf3779ae2a" category="list-text">要更改SMB/CCIFS共享详细信息或导出策略规则、请单击相应选项以访问ONTAP系统管理器。</block>
+  <block id="535184ca902c3c0051ff3401e765baec" category="admonition">您可以将现有导出策略分配给缓存。您不能更改导出策略规则。如果需要更改导出策略、可以使用ONTAP系统管理器。</block>
+  <block id="c76e1ddfccba2139e45754bcf8276247" category="paragraph">缓存卷的大小将根据新百分比进行重新设置。</block>
 </blocks>
